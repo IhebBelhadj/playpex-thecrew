@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "repository": {
+    "id": "thecrew",
+    "name": "The Crew",
+    "key": "ed25519:chBAohkJROLT7ApepFY09WUFh5QbHpAuheHPukXB/XE="
+  },
+  "generatedAt": "2026-10-26T07:37:34.113Z",
+  "plugins": [
+    {
+      "id": "thecrew",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "url": "https://ihebbelhadj.github.io/playpex-thecrew/thecrew-1.0.0.ppx",
+          "sha256": "6c01b6f80515b720abfad129198b8904d5d76292a04824fefc3bcb7945064f0f",
+          "size": 25036,
+          "releasedAt": "2026-10-26",
+          "api": {
+            "server": "^1"
+          },
+          "audience": "everyone",
+          "permissions": {
+            "network": [
+              "torrentio.strem.fun",
+              "api.knaben.org",
+              "api.real-debrid.com",
+              "*.real-debrid.com",
+              "api.alldebrid.com",
+              "*.alldebrid.com",
+              "*.debrid.it",
+              "www.premiumize.me",
+              "*.premiumize.me",
+              "*.energycdn.com",
+              "api.torbox.app",
+              "*.torbox.app",
+              "*.tb-cdn.st"
+            ],
+            "secrets": [
+              "realdebridToken",
+              "alldebridKey",
+              "premiumizeKey",
+              "torboxKey"
+            ],
+            "sources": [
+              "http",
+              "magnet"
+            ],
+            "hooks": [
+              "play.collect",
+              "play.resolve",
+              "releases.providers",
+              "sources.search"
+            ]
+          },
+          "lifecycle": "stable"
+        }
+      ],
+      "name": "The Crew",
+      "publisher": {
+        "name": "Playpex"
+      },
+      "listing": {
+        "summary": "Torrents from Torrentio and Knaben, and direct play through your debrid account (Real-Debrid, AllDebrid, Premiumize, TorBox).",
+        "description": "A port of the Kodi add-on The Crew (GPL-3.0) to a Playpex plugin: its scrapers that still answer and give something Playpex plays. Torrentio (many torrent sites, by IMDb id: the exact file of an episode, also inside season packs) and Knaben (a search across torrent sites, with live seed counts). With a debrid account, a torrent the service already has plays at once as a direct stream: Premiumize and TorBox say which ones they have (\"Cached on\"), Real-Debrid and AllDebrid are tried first when you pick one (they no longer tell), the torrent plays otherwise. Its catalog, lists and Trakt are Playpex's own; its file-host sites, its Cloudflare-blocked sites and its adult sites are left out.",
+        "disclaimer": "Streaming copyrighted content may be illegal where you live. Educational project. The scrapers' logic comes from The Crew (GPL-3.0).",
+        "license": "GPL-3.0 (The Crew)",
+        "categories": [
+          "sources",
+          "resolvers"
+        ]
+      }
+    }
+  ]
+}
